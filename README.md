@@ -25,3 +25,6 @@ It will use the endpoint provided by the wordpress REST API
 - **/wp-json/wp/v2/posts?categories={id}** - return a all the articles belonging to multiple categories
 It will create also the endpoint 
 - **/viewer/** where the angular app will be available
+
+
+The source code of the angular frontend is available inside the folder [angular-src](https://github.com/salv83/articles-viewer/tree/master/angular-src)
