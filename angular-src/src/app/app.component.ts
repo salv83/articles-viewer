@@ -9,6 +9,9 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
   title = 'Article Viewer';
 
+  /* This is the decorator used by the app-root component to call the method of the  showArticleByCategory() of the ArticleComponent 
+  when the Category Selector Component generate the event selectedCategoryChanged
+  */
   @ViewChild(ArticleComponent) article: ArticleComponent;
 
   changeCategory(event: string) {
