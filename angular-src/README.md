@@ -1,27 +1,24 @@
-# Viewer
+The viewer app will use:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+- a [model](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/model/article.ts) that is the main Object of our app and will be used to model the article it has 3 properties:
+   - title: string;
+   - article_body: string;
+   - featured_image: string;
+   
+- a [service](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/service/wprest-api.service.ts) that will do the AJAX calls the wordpress REST API, it has 4 methods
+   - getAllArticles() - call the rest API to get the first 5 posts to display in the initial view
+   - getCategoriesInfo() - get the list with the availabe categories names and ids
+   - getArticlesByCategory(id: string) - get the posts belonging to a specific category 
+   - getArticlesByMultipleCategories(id: string) - get the posts belonging to multiple categories
 
-## Development server
+- There a 2 components:
+The Article component that is the one displays the posts, it's composed mainly by these two files
+- [Article component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/article/article.component.ts)
+- [Article view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/article/article.component.html)
+The CategorySelector component that is multiple select that allows to the user to choose one or more categories, it's composed mainly by these two files
+- [CategorySelector component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/category-selector/category-selector.component.ts)
+- [CategorySelector view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/category-selector/category-selector.component.html)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Everything start from the app-root component that display the initial view of our angular app 
+- [app-root component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/app.component.ts)
+- [app-root view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/app.component.html)
