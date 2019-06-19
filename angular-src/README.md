@@ -13,13 +13,13 @@ The viewer app will use:
 
 - There a 2 components:
 The Article component that is the one displays the posts, it's composed mainly by these two files
-  - [Article component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/article/article.component.ts)
-  - [Article view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/article/article.component.html)
+   - [Article component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/article/article.component.ts)
+   - [Article view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/article/article.component.html)
 
 The CategorySelector component that is multiple select that allows to the user to choose one or more categories, it's composed mainly by these two files
-  - [CategorySelector component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/category-selector/category-selector.component.ts)
-  - [CategorySelector view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/category-selector/category-selector.component.html)
+   - [CategorySelector component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/category-selector/category-selector.component.ts)
+   - [CategorySelector view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/category-selector/category-selector.component.html)
 
-- Everything start from the app-root component that display the initial view of our angular app 
-- [app-root component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/app.component.ts)
-- [app-root view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/app.component.html)
+Everything start from the app-root component that display the initial view of our angular app 
+   - [app-root component](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/app.component.ts)
+   - [app-root view](https://github.com/salv83/articles-viewer/blob/master/angular-src/src/app/app.component.html)
