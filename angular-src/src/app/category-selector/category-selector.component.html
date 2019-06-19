@@ -1,0 +1,4 @@
+
+<select [(ngModel)]="selectedOption" multiple="" class="form-control category_selector" (change)="somethingChanged()">
+  <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+</select>

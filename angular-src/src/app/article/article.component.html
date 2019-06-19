@@ -1,0 +1,10 @@
+<div *ngFor="let article of articles; let i = index; let l = count;">
+  <div id="{{ 'article'+i }}" class="single-article" [class.currentSlide]="i === 0" [ngStyle]="{'display':i > 0 ? 'none' : 'block' }">
+    <div class="article-header"><div class="previous"><i class="fa fa-arrow-circle-o-left prevArt{{i}}" attr.data-target="article{{i == 0 ? l-1 : i-1}}" attr.data-current="{{ 'article'+i }}" aria-hidden="true" (click)="prevClicked($event)"></i></div><h3>{{ article.title }}</h3><div class="next"><i class="fa fa-arrow-circle-o-right nextArt{{i}}" aria-hidden="true" attr.data-target="article{{i == l-1 ? 0 : i+1}}" attr.data-current="{{ 'article'+i }}" (click)="nextClicked($event)"></i></div></div>
+    <img class="article-featured-image" [src]="article.featured_image" alt="Random first slide">
+    <div [innerHTML]="article.article_body"></div>
+  </div>
+</div>
+
+
+

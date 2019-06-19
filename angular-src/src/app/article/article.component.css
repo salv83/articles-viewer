@@ -1,0 +1,35 @@
+.single-article {
+    position: relative;
+    background: #ffffff;
+    height: 100%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.06);
+    z-index: 5;
+    padding: 2%;
+    margin: 0 auto;
+    min-height: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.article-featured-image{
+    max-width:100%;
+    min-width: 100%;
+}
+
+.article-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:991px){
+    .single-article {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .single-article {
+        width: 100%;
+    }
+}
